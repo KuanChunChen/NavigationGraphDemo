@@ -66,7 +66,7 @@
 </div>
 
 
-<div class="c-border-content-title-4">3. 在Activity的FragmentContainerView加入以下三行</div>
+<div class="c-border-content-title-4">2. 在Activity的FragmentContainerView加入以下三行</div>
 <p>android:name="androidx.navigation.fragment.NavHostFragment"<br>
 app:navGraph="@navigation/navigation_main" (選擇性，加了會在IDE預覽)<br>
 app:defaultNavHost="true" </p>
@@ -74,7 +74,7 @@ app:defaultNavHost="true" </p>
   <img src="/images/navigation/07.png" alt="navigation_07">
 </div><br>
 
-<div class="c-border-content-title-4">4. 加入&lt;action&gt; 並設定目的地</div>
+<div class="c-border-content-title-4">3. 加入&lt;action&gt; 並設定目的地</div>
 <p>
 在fragment內 加入action <br>
 加入後設定destination<br>
@@ -84,7 +84,7 @@ app:defaultNavHost="true" </p>
   <img src="/images/navigation/08.png" alt="navigation_08">
 </div><br>
 
-<div class="c-border-content-title-4">5. 程式碼添加跳轉目的地即可跳轉</div>
+<div class="c-border-content-title-4">4. 程式碼添加跳轉目的地即可跳轉</div>
 <p>
   直接在要跳轉的地方加入<br>
   findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
@@ -95,11 +95,11 @@ app:defaultNavHost="true" </p>
 </div><br>
 
 
-<div class="c-border-content-title-4">6. 要跳轉Activity則跟上面&lt;fragment&gt;類似，換成&lt;activity&gt;即可</div><br>
+<div class="c-border-content-title-4">5. 要跳轉Activity則跟上面&lt;fragment&gt;類似，換成&lt;activity&gt;即可</div><br>
 <div class="p-img-container-single">
   <img src="/images/navigation/010.png" alt="navigation_010">
 </div><br>
-<div class="c-border-content-title-4">7. 使用多張nav graph，可使用嵌套方式或 include</div>
+<div class="c-border-content-title-4">6. 使用多張nav graph，可使用嵌套方式或 include</div>
 <p></p>
 
 <p>
@@ -230,7 +230,8 @@ findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment,null, o
 ```
 <div class="c-border-content-title-4">可進行的設置項目有：</div>
 <div class="p-img-container-single">
-  <img src="/images/navigation/018.png" alt="navigation_018">
+  <img src="/images/navigation/018.png"
+       alt="navigation_018">
 </div><br>
 
 
@@ -238,3 +239,7 @@ findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment,null, o
 Navigation 相關參考
 官方文件：
 https://developer.android.com/guide/navigation?hl=zh-tw
+
+投影片解說
+https://tome.app/kcchen/navigation-with-kotlin-clhh1vxwh02wk9w3ynag6cmat
+
